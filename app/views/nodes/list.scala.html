@@ -1,0 +1,7 @@
+@(nodes: Seq[models.Node])(implicit lang: Lang) 
+
+@navigation()
+
+@for(node <- nodes){
+  <li>@node.ip</li>
+}

@@ -1,0 +1,9 @@
+@(messages: Seq[String]) 
+
+@navigation()
+
+@for(message <- messages){
+  <li>@message</li>
+}
+
+@navigation()
